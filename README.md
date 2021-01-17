@@ -1,2 +1,2 @@
-# dashboard
-free fully rtl dashboard which developed with love for persians.
+# Free RTL Dashboard
+Free fully RTL dashboard which developed with love for persians.
