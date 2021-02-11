@@ -1,0 +1,170 @@
+@import "../helpers/helpers";
+@import "../helpers/vars";
+
+.main-sidebar {
+  position: fixed;
+  right: 0;
+  top: 70px;
+  width: 340px;
+  margin-right: -20px;
+  padding-right: 20px;
+  min-height: calc(100vh - 70px);
+  border-left: solid 1px #ebebeb;
+  background: $white;
+  .menu {
+    margin-top: 20px;
+    width: 100%;
+    .menu-item {
+      margin-bottom: 8px;
+      width: 100%;
+      position: relative;
+      transition: 0.3s ease all;
+      // submenu active line
+      &::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 7px;
+        height: 100%;
+        background-color: $blurple;
+        transition: 0.3s ease all;
+        opacity: 0;
+        content: "";
+      }
+      .item-button {
+        cursor: pointer;
+        padding-right: 30px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        transition: 0.3s ease all;
+        &:hover {
+          background-color: $pale-grey;
+        }
+        .item-icon {
+          width: 24px;
+          height: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: $blurple;
+        }
+        .item-title {
+          font-size: 14px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 48px;
+          padding-bottom: 2px;
+          margin-right: 20px;
+          letter-spacing: normal;
+          text-align: right;
+          color: $black;
+          @include textOverflow(190px);
+        }
+      }
+      &.active {
+        background-color: $pale-grey;
+        &::before {
+          opacity: 1;
+        }
+      }
+      &.has-submenu {
+        .item-button {
+          // item arrow
+          &::after {
+            position: absolute;
+            content: "\e832";
+            font-size: 15px;
+            font-family: "dashboard";
+            width: 25px;
+            height: 25px;
+            top: calc((50px - 25px) / 2);
+            left: 8px;
+            line-height: 27px;
+            text-align: center;
+            transition: 0.3s ease all;
+          }
+        }
+        &.submenu-expanded {
+          background-color: $pale-grey;
+          &::before {
+            opacity: 1;
+          }
+          .item-button {
+            &::after {
+              transform: rotate(-90deg);
+            }
+          }
+          .submenu {
+            opacity: 1;
+          }
+        }
+        .submenu {
+          display: none;
+          opacity: 0;
+          transition: 0.3s ease opacity;
+          padding-right: 73px;
+          .submenu-item {
+            transition: 0.3s ease all;
+            width: calc(100% - 7px);
+            &:first-child {
+              margin-top: 10px;
+            }
+            .title {
+              line-height: 40px;
+              padding-right: 10px;
+              font-size: 13px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              letter-spacing: normal;
+              text-align: right;
+              color: $black;
+              @include textOverflow(93%);
+            }
+            &:hover {
+              background-color: lighten($white-two, 5);
+            }
+            &.active {
+              background-color: $white-two;
+            }
+          }
+        }
+      }
+      &.has-badge {
+        .item-button {
+          .item-badge {
+            position: absolute;
+            left: 37px;
+            top: calc((50px - 20px) / 2);
+            width: 20px;
+            height: 20px;
+            border-radius: 2px;
+            text-align: center;
+            font-size: 11px;
+            line-height: 20px;
+            color: $white;
+            margin-left: 3px;
+            &.badge-warning {
+              background-color: $apricot;
+            }
+            &.badge-danger {
+              background-color: $red-pink;
+            }
+            &.badge-success {
+              background-color: $faded-green;
+            }
+            &.badge-primary {
+              background-color: $iris;
+            }
+          }
+          .item-title {
+            width: 170px;
+          }
+        }
+      }
+    }
+  }
+}

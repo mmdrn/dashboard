@@ -6,326 +6,101 @@ html:lang(fa) {
     * {
       font-family: IRANYekan;
     }
-    .button {
-      min-width: 120px;
-      width: auto;
-      height: 40px;
-      padding: 0 20px 0;
-      text-align: center;
-      border-radius: 3px;
-      padding-top: 1px;
-      line-height: 39px;
-      font-family: IRANYekan;
-      font-size: 14px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      letter-spacing: normal;
-      color: $white;
-      transition: 0.3s ease background;
-      &.button-danger {
-        background-color: $pinkish-red;
-        &:hover {
-          background-color: darken($pinkish-red, 15);
-        }
-      }
-      &.button-warning {
-        background-color: $pastel-orange;
-        &:hover {
-          background-color: darken($pastel-orange, 15);
-        }
-      }
-      &.button-success {
-        background-color: $boring-green;
-        &:hover {
-          background-color: darken($boring-green, 15);
-        }
-      }
-      &.button-primary {
-        background-color: $windows-blue;
-        &:hover {
-          background-color: darken($windows-blue, 15);
-        }
-      }
-    }
 
-    .form-control {
+    // main header
+    .main-header {
+      width: 100%;
+      height: 70px;
+      background: $white;
+      box-shadow: 0 3px 14px 0 #56565612;
+      border-bottom: 1px solid #ebebeb;
+      position: fixed;
+      top: 0;
+      z-index: 10;
+      padding: 10px;
       display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
-      flex-direction: column;
-      .control-title {
-        margin-bottom: 10px;
-        font-family: IRANYekan;
-        font-size: 14px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        letter-spacing: normal;
-        text-align: right;
-        color: $black-three;
-        padding-right: 15px;
-        line-height: 25px;
-      }
-      .validations-list {
-        margin-top: 10px;
-        font-family: IRANYekan;
-        font-size: 13px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        letter-spacing: normal;
-        text-align: right;
-        color: $pinkish-red;
-        padding-right: 15px;
-        line-height: 22px;
+      align-items: center;
+      .logo {
+        margin-right: 0;
+        width: 170px;
+        height: 50px;
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         justify-content: flex-start;
-        flex-direction: column;
-        span {
-          margin-top: 8px;
+        img {
+          display: block;
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: contain;
         }
       }
-      &.required {
-        .control-title {
-          position: relative;
-          &::before {
-            margin-top: 7px;
-            margin-left: 5px;
-            width: 4px;
-            height: 4px;
-            background-color: $pinkish-red;
-            border-radius: 100px;
-            content: "";
-            right: 6px;
-            position: absolute;
+      .menu-bottun {
+        cursor: pointer;
+        margin-right: 102px;
+        font-size: 31px;
+        color: $black;
+      }
+      .profile-info {
+        cursor: pointer;
+        margin-left: 10px;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row-reverse;
+        .avatar {
+          width: 50px;
+          height: 50px;
+          border-radius: 100px;
+          overflow: hidden;
+          border: solid 1px #ebebeb;
+          margin-right: 15px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
           }
         }
-      }
-      &.form-control-textbox {
-        input[type="text"] {
-          padding: 0 15px;
-          width: 100%;
-          height: 45px;
-          border-radius: 3px;
-          border: solid 1px rgb(219, 219, 219);
-          background-color: $white-two;
-          transition: all ease 0.15s;
-          &:focus {
-            border: solid 1px #6bb0ff;
-          }
-        }
-      }
-      &.form-control-selectlist {
-        select {
-          width: 100%;
-          height: 45px;
-          padding: 9px 15px 11px 290px;
-          border-radius: 3px;
-          border: solid 1px rgb(219, 219, 219);
-          background: $white-two
-            url("./../../images/ic_keyboard_arrow_down_24px.png") no-repeat;
-          background-position: 20px center;
-          padding-left: 50px;
-          appearance: none;
-          font-family: Iranyekan;
-          transition: all ease 0.15s;
-          &:focus {
-            border: solid 1px #6bb0ff;
-          }
-        }
-      }
-      &.form-control-radiolist {
-        .radio-button-list {
-          padding-right: 15px;
-          display: flex;
-          align-items: flex-start;
-          justify-content: flex-start;
-          .radio {
-            cursor: pointer;
-            margin-left: 25px;
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            input {
-              position: absolute;
-              visibility: hidden;
-              &:checked ~ span {
-                &::before {
-                  background: $greyish-brown;
-                }
-              }
-            }
-            span {
-              line-height: 40px;
-              display: flex;
-              align-items: center;
-              justify-content: flex-start;
-              font-size: 14px;
-              font-weight: normal;
-              font-stretch: normal;
-              font-style: normal;
-              letter-spacing: normal;
-              color: $greyish-brown;
-              padding-right: calc(16px + 8px);
-              position: relative;
-              &::before {
-                width: 12px;
-                height: 12px;
-                border-radius: 50px;
-                border: 2px solid $white;
-                content: "";
-                position: absolute;
-                right: 0;
-                top: calc((100% - 12px) / 2);
-                box-shadow: 0 0 0 2px $greyish-brown;
-                background: transparent;
-                transition: all ease 0.2s;
-              }
-              &:hover {
-                &::before {
-                  background: lighten($greyish-brown, 50);
-                }
-              }
-            }
-            &:last-child {
-              margin-left: 0px;
-            }
-          }
-        }
-      }
-      &.form-control-checkboxlist {
-        .checkbox-list {
-          padding-right: 15px;
-          display: flex;
-          align-items: flex-start;
-          justify-content: flex-start;
-          .checkbox {
-            cursor: pointer;
-            margin-left: 25px;
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            input {
-              position: absolute;
-              visibility: hidden;
-              &:checked ~ span {
-                &::before {
-                  background: $greyish-brown;
-                }
-              }
-            }
-            span {
-              line-height: 40px;
-              display: flex;
-              align-items: center;
-              justify-content: flex-start;
-              font-size: 14px;
-              font-weight: normal;
-              font-stretch: normal;
-              font-style: normal;
-              letter-spacing: normal;
-              color: $greyish-brown;
-              padding-right: calc(16px + 8px);
-              position: relative;
-              &::before {
-                width: 12px;
-                height: 12px;
-                border-radius: 1px;
-                border: 2px solid $white;
-                content: "";
-                position: absolute;
-                right: 0;
-                top: calc((100% - 12px) / 2);
-                box-shadow: 0 0 0 2px $greyish-brown;
-                background: transparent;
-                transition: all ease 0.2s;
-              }
-              &:hover {
-                &::before {
-                  background: lighten($greyish-brown, 50);
-                }
-              }
-            }
-            &:last-child {
-              margin-left: 0px;
-            }
-          }
-        }
-      }
-      &.form-control-textarea {
-        textarea {
-          width: 100%;
-          border-radius: 3px;
-          border: solid 1px rgb(219, 219, 219);
-          background-color: $white-two;
-          resize: none;
-          font-size: 14px;
-          line-height: 25px;
-          padding: 10px;
-        }
-      }
-      &.form-control-text {
-        .control {
-          padding-right: 15px;
-          font-size: 14px;
+        .nickname {
+          font-size: 13px;
           font-weight: normal;
           font-stretch: normal;
           font-style: normal;
-          line-height: 25px;
+          line-height: 30px;
           letter-spacing: normal;
           text-align: right;
-          color: $greyish-brown;
+          color: $black;
+          @include textOverflow(auto);
+          max-width: 150px;
         }
       }
     }
+    // end main header
 
-    .table {
-      width: 100%;
-      border-radius: 3px;
-      border: solid 1px #ebebeb;
-      border-collapse: collapse;
-      tr {
-        border-bottom: 1px solid #ebebeb;
-        &:last-child {
-          border-bottom: none;
-        }
-        td {
-          padding: 10px;
-          text-align: center;
-          line-height: 25px;
-          border-left: 1px solid #ebebeb;
-          font-family: IRANYekan;
-          font-size: 14px;
-          font-stretch: normal;
-          font-style: normal;
-          letter-spacing: normal;
-          color: $black;
-          &:last-child {
-            border-left: none;
-          }
-        }
-      }
-      thead {
-        background-color: #faf8fa;
-        border-bottom: 1px solid #ebebeb;
-        tr {
-          td {
-            font-weight: bold;
-          }
-        }
-      }
-      tbody {
-        tr {
-          td {
-            .buttons {
-              display: flex;
-              align-items: center;
-              justify-content: space-around;
-              width: 100%;
-            }
-          }
+    // wrapper
+    .wrapper {
+      margin-top: 70px;
+      background: $pale-grey;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: relative;
+      padding-right: 320px;
+
+      @import "./partials/main-sidebar";
+
+      .container {
+        width: 100%;
+        min-height: calc(100vh - 70px);
+        background-color: $pale-grey;
+
+        @import "./partials/breadcrumb";
+
+        .sections-wrapper {
+          width: 100%;
+          padding: 30px;
+
+          @import "./partials/section";
         }
       }
     }

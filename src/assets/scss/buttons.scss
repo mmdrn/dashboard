@@ -1,0 +1,44 @@
+@import "./helpers/vars";
+
+.button {
+  min-width: 120px;
+  width: auto;
+  height: 40px;
+  padding: 0 20px 0;
+  text-align: center;
+  border-radius: 6px;
+  padding-top: 1px;
+  line-height: 39px;
+  font-family: IRANYekan;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: $white;
+  transition: 0.3s ease background;
+  &.button-danger {
+    background-color: $pinkish-red;
+    &:hover {
+      background-color: darken($pinkish-red, 15);
+    }
+  }
+  &.button-warning {
+    background-color: $apricot;
+    &:hover {
+      background-color: darken($apricot, 15);
+    }
+  }
+  &.button-success {
+    background-color: $faded-green;
+    &:hover {
+      background-color: darken($faded-green, 15);
+    }
+  }
+  &.button-primary {
+    background-color: $iris;
+    &:hover {
+      background-color: darken($iris, 15);
+    }
+  }
+}
