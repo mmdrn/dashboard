@@ -101,6 +101,59 @@ html:lang(fa) {
           padding: 30px;
 
           @import "./partials/section";
+
+          .table {
+            width: 100%;
+            border-collapse: collapse;
+            tr {
+              th,
+              td {
+                padding-bottom: 20px;
+                span {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  padding: 10px;
+                  text-align: center;
+                  color: $black;
+                  border-top: 1px solid #ebebeb;
+                  border-bottom: 1px solid #ebebeb;
+                  background: $pale-grey;
+                  font-size: 14px;
+                  font-weight: normal;
+                  font-stretch: normal;
+                  font-style: normal;
+                  letter-spacing: normal;
+                  line-height: 40px;
+                }
+                &:first-child {
+                  span {
+                    border-radius: 0 6px 6px 0;
+                    border-right: 1px solid #ebebeb;
+                  }
+                }
+                &:last-child {
+                  span {
+                    border-radius: 6px 0 0 6px;
+                    border-left: 1px solid #ebebeb;
+                  }
+                }
+              }
+              th {
+                span {
+                  line-height: 25px;
+                }
+              }
+              &:last-child {
+                td {
+                  padding-bottom: 0;
+                }
+              }
+              td {
+                min-height: 62px;
+              }
+            }
+          }
         }
       }
     }
