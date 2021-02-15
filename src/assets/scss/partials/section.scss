@@ -5,6 +5,10 @@
   border-radius: 6px;
   border: solid 1px rgb(235, 235, 235);
   background-color: $white;
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
   .section-header {
     padding: 30px;
     display: flex;
