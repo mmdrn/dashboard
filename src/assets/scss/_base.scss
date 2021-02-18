@@ -151,6 +151,9 @@ html:lang(fa) {
               }
               td {
                 min-height: 62px;
+                > span {
+                  min-height: 67px;
+                }
               }
             }
           }

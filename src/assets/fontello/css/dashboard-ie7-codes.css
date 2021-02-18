@@ -1,4 +1,13 @@
 
+.icon-pause { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe800;&nbsp;'); }
+.icon-credit-card { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe801;&nbsp;'); }
+.icon-award { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe802;&nbsp;'); }
 .icon-left-open { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe832;&nbsp;'); }
 .icon-menu { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0c9;&nbsp;'); }
+.icon-coffee { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0f4;&nbsp;'); }
 .icon-angle-left { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf104;&nbsp;'); }
+.icon-shield { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf132;&nbsp;'); }
+.icon-bitcoin { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf15a;&nbsp;'); }
+.icon-database { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1c0;&nbsp;'); }
+.icon-paper-plane { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1d8;&nbsp;'); }
+.icon-medium { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf23a;&nbsp;'); }

@@ -1,4 +1,13 @@
 
+.icon-pause:before { content: '\e800'; } /* '' */
+.icon-credit-card:before { content: '\e801'; } /* '' */
+.icon-award:before { content: '\e802'; } /* '' */
 .icon-left-open:before { content: '\e832'; } /* '' */
 .icon-menu:before { content: '\f0c9'; } /* '' */
+.icon-coffee:before { content: '\f0f4'; } /* '' */
 .icon-angle-left:before { content: '\f104'; } /* '' */
+.icon-shield:before { content: '\f132'; } /* '' */
+.icon-bitcoin:before { content: '\f15a'; } /* '' */
+.icon-database:before { content: '\f1c0'; } /* '' */
+.icon-paper-plane:before { content: '\f1d8'; } /* '' */
+.icon-medium:before { content: '\f23a'; } /* '' */

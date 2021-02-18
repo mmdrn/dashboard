@@ -80,6 +80,32 @@
             }
           }
         }
+        &.four-per-row {
+          .form-item {
+            width: calc((100% - (30px * 3)) / 4);
+            margin-left: 30px;
+            margin-bottom: 40px;
+            &:nth-child(4n) {
+              margin-left: 0;
+            }
+            &:nth-last-child(-n + 4) {
+              margin-bottom: 0px;
+            }
+          }
+        }
+        &.five-per-row {
+          .form-item {
+            width: calc((100% - (30px * 4)) / 5);
+            margin-left: 30px;
+            margin-bottom: 40px;
+            &:nth-child(5n) {
+              margin-left: 0;
+            }
+            &:nth-last-child(-n + 5) {
+              margin-bottom: 0px;
+            }
+          }
+        }
       }
     }
   }

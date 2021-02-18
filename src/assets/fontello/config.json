@@ -23,6 +23,60 @@
       "css": "angle-left",
       "code": 61700,
       "src": "fontawesome"
+    },
+    {
+      "uid": "0b28050bac9d3facf2f0226db643ece0",
+      "css": "pause",
+      "code": 59392,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "347c38a8b96a509270fdcabc951e7571",
+      "css": "database",
+      "code": 61888,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "3d8cc269fdad8a4cda55a20542a84e5c",
+      "css": "credit-card",
+      "code": 59393,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "38575a803c4da31ce20d77e1e1236bcb",
+      "css": "paper-plane",
+      "code": 61912,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "bf09b1c6561dc0ced707476e2cd83d29",
+      "css": "medium",
+      "code": 62010,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "ab656e280958018a7859eba9a1eabbc7",
+      "css": "award",
+      "code": 59394,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "44a0e2660ac966cdfaa04deb6aac51df",
+      "css": "shield",
+      "code": 61746,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "3a26448b711645ba1abfc86c1a6e2f30",
+      "css": "coffee",
+      "code": 61684,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "2cb15eb2b295ee3c33fab1530e18a924",
+      "css": "bitcoin",
+      "code": 61786,
+      "src": "fontawesome"
     }
   ]
 }
